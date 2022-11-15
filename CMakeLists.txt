@@ -7,9 +7,7 @@ project(LOGLAttempt90
 )
 
 add_executable(LOGLAttempt90 
-    ./src/main.cpp
-    
-    )
+    ./src/main.cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
@@ -17,13 +15,11 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_subdirectory(glad/)
 target_link_libraries(LOGLAttempt90 PRIVATE glad)
 
-
-find_package(fmt REQUIRED)
+find_package(fmt CONFIG REQUIRED)
 target_link_libraries(LOGLAttempt90 PRIVATE fmt::fmt)
 
 find_package(glfw3 CONFIG REQUIRED)
 target_link_libraries(LOGLAttempt90 PRIVATE glfw)
 
 target_include_directories(LOGLAttempt90 PUBLIC
-                           "${PROJECT_BINARY_DIR}"
-                           )
+                           "${PROJECT_BINARY_DIR}")
