@@ -7,7 +7,7 @@ project(LOGLAttempt90
 )
 
 add_executable(LOGLAttempt90 
-    ./src/main.cpp)
+    ./src/main.cpp src/Shader.cpp src/Shader.h)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)

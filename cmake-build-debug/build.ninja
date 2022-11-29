@@ -57,6 +57,14 @@ build CMakeFiles/LOGLAttempt90.dir/src/main.cpp.obj: CXX_COMPILER__LOGLAttempt90
   OBJECT_DIR = CMakeFiles\LOGLAttempt90.dir
   OBJECT_FILE_DIR = CMakeFiles\LOGLAttempt90.dir\src
 
+build CMakeFiles/LOGLAttempt90.dir/src/Shader.cpp.obj: CXX_COMPILER__LOGLAttempt90_Debug C$:/Users/admin/Projects/LearnOpenGLAttempt/src/Shader.cpp || cmake_object_order_depends_target_LOGLAttempt90
+  DEFINES = -DFMT_SHARED -DGLFW_DLL
+  DEP_FILE = CMakeFiles\LOGLAttempt90.dir\src\Shader.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -IC:/Users/admin/Projects/LearnOpenGLAttempt/cmake-build-debug -IC:/Users/admin/Projects/LearnOpenGLAttempt/glad/include -isystem C:/src/vcpkg/installed/x64-windows/include
+  OBJECT_DIR = CMakeFiles\LOGLAttempt90.dir
+  OBJECT_FILE_DIR = CMakeFiles\LOGLAttempt90.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LOGLAttempt90
@@ -65,7 +73,7 @@ build CMakeFiles/LOGLAttempt90.dir/src/main.cpp.obj: CXX_COMPILER__LOGLAttempt90
 #############################################
 # Link the executable LOGLAttempt90.exe
 
-build LOGLAttempt90.exe: CXX_EXECUTABLE_LINKER__LOGLAttempt90_Debug CMakeFiles/LOGLAttempt90.dir/src/main.cpp.obj | glad/libglad.a C$:/src/vcpkg/installed/x64-windows/debug/lib/fmtd.lib C$:/src/vcpkg/installed/x64-windows/debug/lib/glfw3dll.lib || glad/libglad.a
+build LOGLAttempt90.exe: CXX_EXECUTABLE_LINKER__LOGLAttempt90_Debug CMakeFiles/LOGLAttempt90.dir/src/main.cpp.obj CMakeFiles/LOGLAttempt90.dir/src/Shader.cpp.obj | glad/libglad.a C$:/src/vcpkg/installed/x64-windows/debug/lib/fmtd.lib C$:/src/vcpkg/installed/x64-windows/debug/lib/glfw3dll.lib || glad/libglad.a
   FLAGS = -g
   LINK_LIBRARIES = glad/libglad.a  C:/src/vcpkg/installed/x64-windows/debug/lib/fmtd.lib  C:/src/vcpkg/installed/x64-windows/debug/lib/glfw3dll.lib  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\LOGLAttempt90.dir
